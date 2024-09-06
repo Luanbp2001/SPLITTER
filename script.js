@@ -9,13 +9,13 @@ const custom = document.querySelector("#custom")
 
 buttons.forEach((button)=>{
     button.addEventListener("click", ()=>{
+        
         if(inputBill.value === "" || quant.value === ""){
             inputBill.focus()
             quant.focus()
             document.querySelector(".input-bill").classList.add("invalid")
             document.querySelector(".input-quant").classList.add("invalid")
         }else{
-
             buttons.forEach( bnt =>{
                 bnt.classList.remove("selected")
                 button.classList.add('selected')
