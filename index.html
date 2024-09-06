@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLITTER</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="tittle">
+        <h1>SPLI <span>TTER</span></h1>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="insertion-value">
+                <label>Bill</label>
+                <div class="input-bill">
+                    <i class="bi bi-currency-dollar"></i>
+                    <input type="text" id="bill-value" placeholder="0">
+                </div>
+            </div>
+            <div class="number-people">
+                <label>Number of People</label>
+                <div class="input-quant" >
+                    <i class="bi bi-person-fill"></i>
+                    <input type="text" id="quant" placeholder="0">
+                </div>
+                <p class="error hidden" id="erro">Digite a quantidade</p>
+            </div>
+            <div class="select">
+                <label>Select Tip %</label>
+                <div class="cards">
+                    <div class="card">
+                        <button class="btn" data-tip="5">5%</button>
+                    </div>
+                    <div class="card">
+                        <button class="btn" data-tip="10">10%</button>
+                    </div>
+                    <div class="card">
+                        <button class="btn" data-tip="15">15%</button>
+                    </div>
+                    <div class="card">
+                        <button class="btn" data-tip="25">25%</button>
+                    </div>
+                    <div class="card">
+                        <button class="btn" data-tip="50">50%</button>
+                    </div>
+                    <div class="card custom">
+                        <input type="text" id="custom" placeholder="custom">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="amount">
+                <div class="description">
+                    <p>Tip Amount</p>
+                    <p class="person">/person</p>
+                </div>
+                <div class="valor">
+                    <p id="amount">$<span id="value-amount">0.00</span></p>
+                </div>
+            </div>
+            <div class="total">
+                <div class="description">
+                    <p>Total</p>
+                    <p class="person">/person</p>
+                </div>
+                <div class="valor">
+                    <p id="total">$<span id="person-total">0.00</span></p>
+                </div>
+            </div>
+                <div class="button">
+                    <button id="reset">Reset</button>
+                </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

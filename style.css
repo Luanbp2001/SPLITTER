@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: #c5e4e7;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.tittle h1{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 9px;
+    line-height: 30px;
+    color: #43696a;
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    min-width: 320px;
+    padding: 2.5rem;
+    background:#ffffff;
+    border-radius: 15px;
+    width: 520px;
+    gap: 3rem;
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+label{
+    color: #606a6b;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.input-bill{
+    margin-top: .3rem;
+    background: #f3f8fb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6rem;
+    border-radius: 5px;
+}
+i{
+    color: #adc2c1;
+}
+.input-bill input{
+    padding: .2rem .2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 90%;
+}
+.cards{
+    margin-top: .7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.custom input{
+    width: 100%;
+    padding: .8rem;
+    border: none;
+    background: #f3f9f9;
+    text-align: right;
+    outline: none;
+    border-radius:5px ;
+    font-weight: 600;
+}
+.custom input:focus{
+    border:1px solid #5aab9f;
+}
+.custom input::placeholder{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+button{
+    width: 100%;
+    padding: .8rem;
+    border-radius: 5px;
+    border: none;
+    background: #00474b;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: .3s ease
+}
+.card button:active{
+    background: #9fe8df;
+    transform: scale(1.1);
+    color: #00474b;
+}
+.input-quant{
+    display: flex;
+    background: #f3f8fb;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6rem;
+    border-radius: 5px;
+}
+.input-quant input{
+    width: 100%;
+    border: none;
+    background: #f3f9f9;
+    text-align: right;
+    outline: none;
+    border-radius:5px ;
+    font-weight: 600;
+}
+
+/* Os dois tipos de focos nos inputs */
+.invalid{
+    border: 1px solid red;
+}
+.focus{
+    border: 1px solid #5aab9f;
+}
+
+.right{
+    width: 50%;
+    background: #00474b;
+    border-radius: 15px;
+    padding: 2rem;
+}
+.amount, .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+#amount, #total{
+    color: #25c5ad;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.person{
+    color: #6a969c;
+    font-size: 1rem;
+}
+.button button{
+    margin-top: 5rem;
+    background: #9fe8df;
+    color: #034c48;
+    width: 100%;
+    transition: .2s ease;
+}
+.button button:active{
+    transform: scale(1.01);
+    background: #26c0ab;
+    color: #9fe8df;
+}
+.error{
+    font-size: 1rem;
+    color: red
+}
+.hidden{
+    display: none;
+}
+.selected {
+    background-color: #26c0ab;
+}
+
+@media (max-width: 530px){
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 490px){
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
