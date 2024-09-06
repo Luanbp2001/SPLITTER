@@ -19,6 +19,11 @@ body{
     flex-direction: column;
     gap: 3rem;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
 .tittle h1{
     display: flex;
     flex-direction: column;
@@ -90,7 +95,7 @@ i{
 }
 .custom input::placeholder{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 button{
